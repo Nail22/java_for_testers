@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/geometry/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/geometry/Geometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/geometry/figures/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/geometry/figures/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/geometry/figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/geometry/figures/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/geometry/figures/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/geometry/figures/SquareTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Hello">
+  <component name="RunManager" selected="Gradle.SquareTests.canCalculateArea">
     <configuration name="Geometry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.Geometry" />
       <module name="sandbox.main" />
@@ -154,9 +156,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SquareTests.canCalculateArea" />
         <item itemvalue="Application.Hello" />
         <item itemvalue="Gradle.SquareTests.canCalculatePerimeter" />
-        <item itemvalue="Gradle.SquareTests.canCalculateArea" />
         <item itemvalue="Application.Geometry" />
       </list>
     </recent_temporary>
