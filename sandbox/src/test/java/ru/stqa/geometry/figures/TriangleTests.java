@@ -19,4 +19,22 @@ public class TriangleTests {
         Assertions.assertEquals(23,result);
     }
 
+    @Test
+    void cannotCreateTriangleWithNegativeSide() {
+        try {
+            new Triangle(-5, 6, 10);
+            Assertions.fail();
+        } catch (IllegalArgumentException exception) {
+
+        }
+    }
+    @Test
+    void cannotCreateTriangleWithOneSideIsBigger() {
+        try {
+            new Triangle(2, 2, 5);
+            Assertions.fail();
+        } catch (IllegalArgumentException exception) {
+
+        }
+    }
 }

@@ -13,6 +13,14 @@ public class Triangle {
         this.firstSide = firstSide;
         this.secondSide = secondSide;
         this.thirdSide = thirdSide;
+
+        if (firstSide < 0 || secondSide < 0 || thirdSide < 0) {
+            throw new IllegalArgumentException("Одна из сторон треугольника имеет отрицательную длинну");
+        }
+
+        if (firstSide + secondSide <= thirdSide || firstSide + thirdSide <= secondSide || secondSide + thirdSide <= firstSide) {
+            throw new IllegalArgumentException("Cумма двух любых сторон должна быть не меньше третьей стороны");
+        }
     }
 
     public static void printTriangleArea(Triangle t){
