@@ -79,6 +79,7 @@
     "Gradle.TriangleTests.cannotCreateTriangleWithNegativeSide.executor": "Run",
     "Gradle.TriangleTests.cannotCreateTriangleWithOneSideIsBigger.executor": "Run",
     "Gradle.TriangleTests.executor": "Run",
+    "Gradle.TriangleTests.testEqualTriangle.executor": "Run",
     "Gradle.sandbox [:Geometry.main()].executor": "Run",
     "Gradle.sandbox [:Hello.main()].executor": "Run",
     "Gradle.sandbox [:ru.stqa.geometry.Geometry.main()].executor": "Run",
@@ -95,7 +96,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TriangleTests">
+  <component name="RunManager" selected="Gradle.TriangleTests.testEqualTriangle">
     <configuration name="SquareTests.canCalculatePerimeter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -134,30 +135,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.stqa.geometry.figures.TriangleTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TriangleTests.canCalculateArea" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.geometry.figures.TriangleTests.canCalculateArea&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,13 +193,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TriangleTests.testEqualTriangle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.geometry.figures.TriangleTests.testEqualTriangle&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TriangleTests.testEqualTriangle" />
         <item itemvalue="Gradle.TriangleTests" />
         <item itemvalue="Gradle.TriangleTests.cannotCreateTriangleWithOneSideIsBigger" />
         <item itemvalue="Gradle.TriangleTests.cannotCreateTriangleWithNegativeSide" />
         <item itemvalue="Gradle.SquareTests.canCalculatePerimeter" />
-        <item itemvalue="Gradle.TriangleTests.canCalculateArea" />
       </list>
     </recent_temporary>
   </component>

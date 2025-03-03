@@ -1,5 +1,7 @@
 package ru.stqa.geometry.figures;
 
+import java.util.Objects;
+
 public class Triangle {
 
     public float firstSide;
@@ -8,6 +10,23 @@ public class Triangle {
 
     public float thirdSide;
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Triangle triangle = (Triangle) o;
+        return (Float.compare(firstSide, triangle.firstSide) == 0 && Float.compare(secondSide, triangle.secondSide) == 0 && Float.compare(thirdSide, triangle.thirdSide) == 0)
+                || (Float.compare(firstSide, triangle.secondSide) == 0 && Float.compare(secondSide, triangle.thirdSide) == 0 && Float.compare(thirdSide, triangle.firstSide) == 0)
+                || (Float.compare(firstSide, triangle.thirdSide) == 0 && Float.compare(secondSide, triangle.firstSide) == 0 && Float.compare(thirdSide, triangle.secondSide) == 0)
+                || (Float.compare(firstSide, triangle.firstSide) == 0 && Float.compare(secondSide, triangle.thirdSide) == 0 && Float.compare(thirdSide, triangle.secondSide) == 0)
+                || (Float.compare(firstSide, triangle.secondSide) == 0 && Float.compare(secondSide, triangle.firstSide) == 0 && Float.compare(thirdSide, triangle.thirdSide) == 0)
+                || (Float.compare(firstSide, triangle.thirdSide) == 0 && Float.compare(secondSide, triangle.secondSide) == 0 && Float.compare(thirdSide, triangle.firstSide) == 0);
+    }
+
+    @Override
+    public int hashCode() {
+        return 1;
+    }
 
     public Triangle(float firstSide, float secondSide, float thirdSide) {
         this.firstSide = firstSide;
