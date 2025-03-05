@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../addressbook_web_tests/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../addressbook_web_tests/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../addressbook_web_tests/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../addressbook_web_tests/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/geometry/figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/geometry/figures/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/geometry/figures/TriangleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/geometry/figures/TriangleTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../addressbook_web_tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
@@ -72,6 +78,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.GroupCreationTests.test.executor": "Run",
     "Gradle.SquareTests.canCalculateArea.executor": "Run",
     "Gradle.SquareTests.canCalculatePerimeter.executor": "Run",
     "Gradle.TriangleTests.canCalculateArea.executor": "Run",
@@ -87,7 +94,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -96,11 +106,11 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TriangleTests.testEqualTriangle">
-    <configuration name="SquareTests.canCalculatePerimeter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.GroupCreationTests.test">
+    <configuration name="GroupCreationTests.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -110,7 +120,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.geometry.figures.SquareTests.canCalculatePerimeter&quot;" />
+            <option value="&quot;GroupCreationTests.test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -219,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTests.test" />
         <item itemvalue="Gradle.TriangleTests.testEqualTriangle" />
         <item itemvalue="Gradle.TriangleTests" />
         <item itemvalue="Gradle.TriangleTests.cannotCreateTriangleWithOneSideIsBigger" />
         <item itemvalue="Gradle.TriangleTests.cannotCreateTriangleWithNegativeSide" />
-        <item itemvalue="Gradle.SquareTests.canCalculatePerimeter" />
       </list>
     </recent_temporary>
   </component>
