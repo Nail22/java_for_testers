@@ -73,6 +73,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.GroupCreationTests.canCreateGroup.executor": "Run",
     "Gradle.GroupCreationTests.executor": "Run",
     "Gradle.GroupCreationTests.test.executor": "Run",
     "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Run",
