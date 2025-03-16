@@ -88,14 +88,14 @@
     "Gradle.ContactRemovalTests.executor": "Run",
     "Gradle.ContactRemovalTests.test.executor": "Run",
     "Gradle.GroupCreationTests.canCreateGroup (1).executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroup.executor": "Debug",
+    "Gradle.GroupCreationTests.canCreateGroup.executor": "Run",
     "Gradle.GroupCreationTests.canCreateGroupWithNameOnly (1).executor": "Run",
     "Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateMultipleGroups.executor": "Run",
+    "Gradle.GroupCreationTests.canCreateMultipleGroups.executor": "Debug",
     "Gradle.GroupCreationTests.executor": "Run",
     "Gradle.GroupCreationTests.test.executor": "Run",
     "Gradle.GroupModificationTests.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Debug",
+    "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Run",
     "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Run",
     "Gradle.GroupRemovalTests.executor": "Run",
     "Gradle.GroupRemovalTests.test.executor": "Run",
@@ -129,10 +129,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.GroupCreationTests.canCreateMultipleGroups">
-    <configuration name="CollectionTests.listTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -142,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.collections.CollectionTests.listTest&quot;" />
+            <option value="&quot;ru.stqa.addressbook.tests.GroupCreationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -250,7 +250,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.CollectionTests.listTest" />
+      <item itemvalue="Gradle.GroupCreationTests" />
       <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
       <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
       <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
@@ -259,10 +259,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
+        <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
-        <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
         <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
-        <item itemvalue="Gradle.CollectionTests.listTest" />
+        <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
       </list>
     </recent_temporary>
   </component>
