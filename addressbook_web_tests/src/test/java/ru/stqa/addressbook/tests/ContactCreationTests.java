@@ -1,17 +1,32 @@
 package ru.stqa.addressbook.tests;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import ru.stqa.addressbook.model.ContactData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactCreationTests extends TestBase {
 
-    @Test
-    public void canCreateBaseContact() {
-        app.contact().createContact(new ContactData().withFistName("FirstName").withLastName("LastName").withAddress("Address").withPhonesHome("phones").withEmail("email"));
+
+    public static List<ContactData> contactProvider() {
+        var result = new ArrayList<ContactData>(List.of(
+                new ContactData().withFistName("FirstName").withLastName("LastName").withAddress("Address").withPhonesHome("phones").withEmail("email"),
+                new ContactData("First_name", "Middle_name", "Last_name", "Nickname", "address", "Telephone", "email")));
+        for (int i = 0; i < 7; i++) {
+            result.add(new ContactData(randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2)));
+        }
+        return result;
     }
 
-    @Test
-    public void canCreateFullContact() {
-        app.contact().createContact(new ContactData("First_name", "Middle_name", "Last_name", "Nickname", "address", "Telephone", "email"));
+    @ParameterizedTest
+    @MethodSource("contactProvider")
+    public void canCreateMultipleGroups(ContactData contact) {
+        int contactCount = app.contact().getCountContact();
+        app.contact().createContact(contact);
+        int newContactCount = app.contact().getCountContact();
+        Assertions.assertEquals(contactCount + 1, newContactCount);
     }
 }

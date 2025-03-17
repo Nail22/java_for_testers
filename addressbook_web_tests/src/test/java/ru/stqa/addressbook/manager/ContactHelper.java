@@ -20,7 +20,13 @@ public class ContactHelper extends HelperBase {
         selectContact();
         removeSelectedContact();
         returnToHomePage();
+    }
 
+    public void removalAllContact(){
+        opensHomePage();
+        selectAllContact();
+        removeSelectedContact();
+        opensHomePage();
     }
 
     private void removeSelectedContact() {
@@ -60,8 +66,16 @@ public class ContactHelper extends HelperBase {
             click(By.linkText("add new"));
         }
     }
-    public boolean isContactPresent() {
+
+    public int getCountContact() {
         opensHomePage();
-        return manager.isElementPresent(By.name("selected[]"));
+        return manager.driver.findElements(By.name("selected[]")).size();
+    }
+
+    private void selectAllContact() {
+        var checkboxes = manager.driver.findElements(By.name("selected[]"));
+        for (var checkbox : checkboxes){
+            checkbox.click();
+        }
     }
 }
