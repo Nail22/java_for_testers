@@ -3,6 +3,9 @@ package ru.stqa.addressbook.manager;
 import org.openqa.selenium.By;
 import ru.stqa.addressbook.model.GroupData;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GroupHelper extends HelperBase {
 
     public GroupHelper (ApplicationManager manager){
@@ -16,15 +19,16 @@ public class GroupHelper extends HelperBase {
         returnToGroupPage();
     }
 
-    public void removeGroup() {
+    public void removeGroup(GroupData group) {
         opensGroupsPage();
-        selectGruop();
+        selectGruop(group);
         removeSelectedGroups();
         returnToGroupPage();
     }
 
-    public void modifyGroup(GroupData modifyGroup) {
-        selectGruop();
+    public void modifyGroup(GroupData group,GroupData modifyGroup) {
+        opensGroupsPage();
+        selectGruop(group);
         initGroupModification();
         fillGroupForm(modifyGroup);
         submitGroupModification();
@@ -64,8 +68,8 @@ public class GroupHelper extends HelperBase {
         click(By.name("edit"));
     }
 
-    private void selectGruop() {
-        click(By.name("selected[]"));
+    private void selectGruop(GroupData group) {
+        click(By.cssSelector(String.format("input[value='%s']", group.id())));
     }
 
     public void opensGroupsPage() {
@@ -90,5 +94,19 @@ public class GroupHelper extends HelperBase {
         for (var checkbox : checkboxes){
             checkbox.click();
         }
+    }
+
+    public List<GroupData> getList() {
+        opensGroupsPage();
+        var groups = new ArrayList<GroupData>();
+        var spans = manager.driver.findElements(By.cssSelector("span.group"));
+        for (var span : spans) {
+            var name = span.getText();
+            var checkbox = span.findElement(By.name("selected[]"));
+            var id = checkbox.getAttribute("value");
+            groups.add(new GroupData().withId(id).withName(name));
+        }
+
+        return groups;
     }
 }
