@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/GroupHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupModificationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupRemovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupRemovalTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ContactHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/model/ContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactRemovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactRemovalTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +69,11 @@
     &quot;accountId&quot;: &quot;173a96e5-53bc-4c3c-a1ff-0bfc1b02f009&quot;
   }
 }</component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="GradleRunConfiguration" name="ContactRemovalTests.canRemoveContact" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -79,56 +83,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.CollectionTests.arrayTests.executor": "Run",
-    "Gradle.CollectionTests.listTest.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateBaseContact.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateFullContact.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateMultipleGroups.executor": "Run",
-    "Gradle.ContactCreationTests.executor": "Run",
-    "Gradle.ContactCreationTests.test.executor": "Run",
-    "Gradle.ContactRemovalTests.canRemoveALLContact.executor": "Run",
-    "Gradle.ContactRemovalTests.canRemoveAllContact.executor": "Run",
-    "Gradle.ContactRemovalTests.canRemoveContact.executor": "Run",
-    "Gradle.ContactRemovalTests.executor": "Run",
-    "Gradle.ContactRemovalTests.test.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroup (1).executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroup.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroupWithNameOnly (1).executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateMultipleGroups.executor": "Run",
-    "Gradle.GroupCreationTests.canNotCreateGroups.executor": "Run",
-    "Gradle.GroupCreationTests.executor": "Run",
-    "Gradle.GroupCreationTests.test.executor": "Run",
-    "Gradle.GroupModificationTests.canModifyGroup.executor": "Run",
-    "Gradle.GroupModificationTests.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Debug",
-    "Gradle.GroupRemovalTests.executor": "Run",
-    "Gradle.GroupRemovalTests.test.executor": "Run",
-    "Gradle.SquareTests.canCalculateArea.executor": "Run",
-    "Gradle.SquareTests.canCalculatePerimeter.executor": "Run",
-    "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
-    "Gradle.TriangleTests.canCalculateArea.executor": "Run",
-    "Gradle.TriangleTests.canCalculatePerimeter.executor": "Run",
-    "Gradle.TriangleTests.cannotCreateTriangleWithNegativeSide.executor": "Run",
-    "Gradle.TriangleTests.cannotCreateTriangleWithOneSideIsBigger.executor": "Run",
-    "Gradle.TriangleTests.executor": "Run",
-    "Gradle.TriangleTests.testEqualTriangle.executor": "Run",
-    "Gradle.sandbox [:Geometry.main()].executor": "Run",
-    "Gradle.sandbox [:Hello.main()].executor": "Run",
-    "Gradle.sandbox [:ru.stqa.geometry.Geometry.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.CollectionTests.arrayTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CollectionTests.listTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateBaseContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateFullContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateMultipleGroups.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.canRemoveALLContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.canRemoveAllContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.canRemoveContact.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ContactRemovalTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroup (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroupWithNameOnly (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateMultipleGroups.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canNotCreateGroups.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupModificationTests.canModifyGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupModificationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.canRemoveGroup.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.GroupRemovalTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SquareTests.canCalculateArea.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SquareTests.canCalculatePerimeter.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'addressbook_web_tests.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.canCalculateArea.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.canCalculatePerimeter.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.cannotCreateTriangleWithNegativeSide.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.cannotCreateTriangleWithOneSideIsBigger.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.testEqualTriangle.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sandbox [:Geometry.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sandbox [:Hello.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sandbox [:ru.stqa.geometry.Geometry.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="ApplicationManager" />
@@ -136,7 +140,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce">
+  <component name="RunManager" selected="Gradle.ContactCreationTests.canCreateMultipleGroups">
     <configuration name="ContactCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,6 +165,54 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ContactRemovalTests.canRemoveAllContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.addressbook.tests.ContactRemovalTests.canRemoveAllContact&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactRemovalTests.canRemoveContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.addressbook.tests.ContactRemovalTests.canRemoveContact&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="GroupCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,54 +227,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.stqa.addressbook.tests.GroupCreationTests.canCreateMultipleGroups&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GroupModificationTests.canModifyGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.GroupModificationTests.canModifyGroup&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GroupRemovalTests.canRemoveAllGroupsAtOnce" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.GroupRemovalTests.canRemoveAllGroupsAtOnce&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -258,19 +262,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
-      <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
-      <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
+      <item itemvalue="Gradle.ContactRemovalTests.canRemoveAllContact" />
       <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
+      <item itemvalue="Gradle.ContactRemovalTests.canRemoveContact" />
       <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
+      <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
+        <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
+        <item itemvalue="Gradle.ContactRemovalTests.canRemoveContact" />
+        <item itemvalue="Gradle.ContactRemovalTests.canRemoveAllContact" />
         <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
         <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
-        <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
-        <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
       </list>
     </recent_temporary>
   </component>

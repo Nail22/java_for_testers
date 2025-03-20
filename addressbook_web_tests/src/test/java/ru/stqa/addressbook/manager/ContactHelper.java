@@ -3,26 +3,30 @@ package ru.stqa.addressbook.manager;
 import org.openqa.selenium.By;
 import ru.stqa.addressbook.model.ContactData;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ContactHelper extends HelperBase {
 
-    public ContactHelper (ApplicationManager manager){
+    public ContactHelper(ApplicationManager manager) {
         super(manager);
     }
 
-    public void createContact (ContactData contact){
+    public void createContact(ContactData contact) {
         opensContactCreatePage();
         fillContactForm(contact);
         submitContactCreation();
         returnToHomePage();
     }
-    public void removalContact(){
+
+    public void removalContact(ContactData contact) {
         opensHomePage();
-        selectContact();
+        selectContact(contact);
         removeSelectedContact();
         returnToHomePage();
     }
 
-    public void removalAllContact(){
+    public void removalAllContact() {
         opensHomePage();
         selectAllContact();
         removeSelectedContact();
@@ -33,8 +37,8 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//input[@value=\'Delete\']"));
     }
 
-    private void selectContact() {
-        click(By.name("selected[]"));
+    private void selectContact(ContactData contact) {
+        click(By.cssSelector(String.format("input[value='%s']", contact.id())));
     }
 
     private void opensHomePage() {
@@ -74,8 +78,25 @@ public class ContactHelper extends HelperBase {
 
     private void selectAllContact() {
         var checkboxes = manager.driver.findElements(By.name("selected[]"));
-        for (var checkbox : checkboxes){
+        for (var checkbox : checkboxes) {
             checkbox.click();
         }
+    }
+
+
+    public List<ContactData> getList() {
+        opensHomePage();
+        var contacts = new ArrayList<ContactData>();
+        var spans = manager.driver.findElements(By.xpath("//tr[@name=\"entry\"]"));
+        var lastNameList = manager.driver.findElements(By.xpath("//tr[@name=\"entry\"]//td[2]"));
+        var firstNameList = manager.driver.findElements(By.xpath("//tr[@name=\"entry\"]//td[3]"));
+        for (int i = 0; i < spans.size(); i++) {
+            var checkbox = spans.get(i).findElement(By.name("selected[]"));
+            var id = checkbox.getAttribute("value");
+            var lastName = lastNameList.get(i).getText();
+            var firstName = firstNameList.get(i).getText();
+            contacts.add(new ContactData().withId(id).withLastName(lastName).withFistName(firstName));
+        }
+        return contacts;
     }
 }
