@@ -14,10 +14,10 @@ public class ContactCreationTests extends TestBase {
 
     public static List<ContactData> contactProvider() {
         var result = new ArrayList<ContactData>(List.of(
-                new ContactData().withFistName("FirstName").withLastName("LastName").withAddress("Address").withPhonesHome("phones").withEmail("email"),
-                new ContactData("", "First_name", "Middle_name", "Last_name", "Nickname", "address", "Telephone", "email")));
+                new ContactData().withFistName("FirstName").withLastName("LastName").withAddress("Address").withPhoto("src/test/resources/images/avatar.jpg").withPhonesHome("phones").withEmail("email"),
+                new ContactData("", "First_name", "Middle_name", "Last_name", "Nickname", "address", "src/test/resources/images/avatar.jpg", "Telephone", "email")));
         for (int i = 0; i < 7; i++) {
-            result.add(new ContactData("", randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2)));
+            result.add(new ContactData("", randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2),randomFile("src/test/resources/images"), randomString(i * 2), randomString(i * 2)));
         }
         return result;
     }
@@ -33,7 +33,7 @@ public class ContactCreationTests extends TestBase {
         };
         newGroups.sort(compareById);
         var expectedList = new ArrayList<>(oldGroups);
-        expectedList.add(contact.withId(newGroups.get(newGroups.size() - 1).id()).withMiddleName("").withNickName("").withAddress("").withPhonesHome("").withEmail(""));
+        expectedList.add(contact.withId(newGroups.get(newGroups.size() - 1).id()).withMiddleName("").withNickName("").withAddress("").withPhoto("").withPhonesHome("").withEmail(""));
         expectedList.sort(compareById);
         Assertions.assertEquals(newGroups, expectedList);
     }

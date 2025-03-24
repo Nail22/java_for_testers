@@ -70,6 +70,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("lastname"), contact.lastName());
         type(By.name("nickname"), contact.nickName());
         type(By.name("address"), contact.address());
+        attach(By.name("photo"), contact.photo());
         type(By.name("home"), contact.phonesHome());
         type(By.name("email"), contact.email());
     }

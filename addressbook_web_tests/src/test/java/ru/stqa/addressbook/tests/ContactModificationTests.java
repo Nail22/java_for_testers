@@ -17,11 +17,11 @@ public class ContactModificationTests extends TestBase{
         var oldContact = app.contact().getList();
         var rnd  = new Random();
         var index = rnd.nextInt(oldContact.size());
-        var testData = new ContactData().withFistName("Modify firstName");
+        var testData = new ContactData().withFistName("Modify firstName").withPhoto("src/test/resources/images/avatar.jpg");
         app.contact().modifyContact(oldContact.get(index), testData);
         var newContacts = app.contact().getList();
         var expectedList = new ArrayList<>(oldContact);
-        expectedList.set(index, testData.withId(oldContact.get(index).id()));
+        expectedList.set(index, testData.withId(oldContact.get(index).id()).withPhoto(oldContact.get(index).photo()));
         Comparator<ContactData> compareById = (o1, o2) -> {
             return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
         };
