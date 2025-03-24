@@ -3,6 +3,7 @@ package ru.stqa.addressbook.tests;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+import ru.stqa.addressbook.common.CommonFunction;
 import ru.stqa.addressbook.model.ContactData;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class ContactCreationTests extends TestBase {
                 new ContactData().withFistName("FirstName").withLastName("LastName").withAddress("Address").withPhoto("src/test/resources/images/avatar.jpg").withPhonesHome("phones").withEmail("email"),
                 new ContactData("", "First_name", "Middle_name", "Last_name", "Nickname", "address", "src/test/resources/images/avatar.jpg", "Telephone", "email")));
         for (int i = 0; i < 7; i++) {
-            result.add(new ContactData("", randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2), randomString(i * 2),randomFile("src/test/resources/images"), randomString(i * 2), randomString(i * 2)));
+            result.add(new ContactData("", CommonFunction.randomString(i * 2), CommonFunction.randomString(i * 2), CommonFunction.randomString(i * 2), CommonFunction.randomString(i * 2), CommonFunction.randomString(i * 2),randomFile("src/test/resources/images"), CommonFunction.randomString(i * 2), CommonFunction.randomString(i * 2)));
         }
         return result;
     }
