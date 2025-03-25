@@ -2,14 +2,17 @@ package ru.stqa.addressbook.tests;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.stqa.addressbook.common.CommonFunction;
 import ru.stqa.addressbook.model.GroupData;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -25,7 +28,16 @@ public class GroupCreationTests extends TestBase {
 //                }
 //            }
 //        }
-        ObjectMapper mapper = new ObjectMapper();
+//        var json= "";
+//        try (var reader = new FileReader("groups.json");
+//             var breader = new BufferedReader(reader)) {
+//           var line = breader.readLine();
+//           while (line != null){
+//               json= json + line;
+//               line = breader.readLine();
+//           }
+//        }
+        var mapper = new JsonMapper();
         var value = mapper.readValue(new File("groups.json"), new TypeReference<List<GroupData>>() {} );
         result.addAll(value);
         return result;
