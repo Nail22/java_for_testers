@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/common/CommonFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/common/CommonFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/generator/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -161,22 +157,7 @@
       <recent name="C:\devel\homework\java_for_testers\addressbook_web_tests\src\test\resources\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTests.canCreateMultipleGroups">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.addressbook.generator.Generator" />
-      <module name="addressbook_web_tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="--type contacts --output contacts.json --format json --count 3" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../addressbook_web_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.addressbook.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.GroupModificationTests">
     <configuration name="ContactCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -191,30 +172,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.stqa.addressbook.tests.ContactCreationTests.canCreateMultipleGroups&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactModificationTests.canModifyContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.ContactModificationTests.canModifyContact&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -249,42 +206,92 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="sandbox [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.addressbook.tests.GroupCreationTests.canCreateMultipleGroups&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GroupModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.addressbook.tests.GroupModificationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GroupModificationTests.canModifyGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.addressbook.tests.GroupModificationTests.canModifyGroup&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Generator" />
-      <item itemvalue="Gradle.sandbox [build]" />
+      <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
+      <item itemvalue="Gradle.GroupModificationTests" />
+      <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
       <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
       <item itemvalue="Gradle.GroupCreationTests" />
-      <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupModificationTests" />
+        <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
+        <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
         <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
         <item itemvalue="Gradle.GroupCreationTests" />
-        <item itemvalue="Gradle.sandbox [build]" />
-        <item itemvalue="Application.Generator" />
-        <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
       </list>
     </recent_temporary>
   </component>
