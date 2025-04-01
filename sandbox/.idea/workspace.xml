@@ -7,7 +7,7 @@
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +157,7 @@
       <recent name="C:\devel\homework\java_for_testers\addressbook_web_tests\src\test\resources\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupModificationTests">
+  <component name="RunManager" selected="Gradle.GroupCreationTests.canCreateGroup">
     <configuration name="ContactCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -182,7 +182,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests.canCreateGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
@@ -195,7 +195,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.GroupCreationTests&quot;" />
+            <option value="&quot;ru.stqa.addressbook.tests.GroupCreationTests.canCreateGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -279,19 +279,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
       <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
       <item itemvalue="Gradle.GroupModificationTests" />
       <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
       <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
-      <item itemvalue="Gradle.GroupCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
         <item itemvalue="Gradle.GroupModificationTests" />
         <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
         <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
         <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
-        <item itemvalue="Gradle.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>
