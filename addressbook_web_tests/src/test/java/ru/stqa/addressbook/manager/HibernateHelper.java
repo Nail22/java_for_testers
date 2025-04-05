@@ -3,7 +3,9 @@ package ru.stqa.addressbook.manager;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.cfg.Configuration;
+import ru.stqa.addressbook.manager.hbm.ContactRecord;
 import ru.stqa.addressbook.manager.hbm.GroupRecord;
+import ru.stqa.addressbook.model.ContactData;
 import ru.stqa.addressbook.model.GroupData;
 
 import java.util.ArrayList;
@@ -18,9 +20,9 @@ public class HibernateHelper extends HelperBase {
 
 
          sessionFactory = new Configuration()
-                 //.addAnnotatedClass(Book.class)
+                 .addAnnotatedClass(ContactRecord.class)
                  .addAnnotatedClass(GroupRecord.class)
-                 .setProperty(AvailableSettings.URL, "jdbc:mysql://localhost/addressbook")
+                 .setProperty(AvailableSettings.URL, "jdbc:mysql://localhost/addressbook?zeroDateTimeBehavior=convertToNull")
                  .setProperty(AvailableSettings.USER, "root")
                  .setProperty(AvailableSettings.PASS, "")
                  .buildSessionFactory();
@@ -64,5 +66,35 @@ public class HibernateHelper extends HelperBase {
             session.persist(convert(groupData));
             session.getTransaction().commit();
         });
+    }
+
+    static List<ContactData> converContactList(List<ContactRecord> records){
+        List<ContactData> result = new ArrayList<>();
+        for (var record : records){
+            result.add(convert(record));
+        }
+        return result;
+    }
+    private static ContactData convert(ContactRecord record) {
+        return new ContactData().withId(""+record.id)
+                .withFistName(record.firstname)
+                .withMiddleName(record.middlename)
+                .withLastName(record.lastname)
+                .withNickName(record.nickname)
+                .withAddress(record.address);
+    }
+
+    private static ContactRecord convert(ContactData data) {
+        var id = data.id();
+        if ("".equals(id)){
+            id = "0";
+        }
+        return new ContactRecord(Integer.parseInt(id), data.firstName(), data.middleName(),data.lastName(),data.nickName(),data.address());
+    }
+
+    public List<ContactData> getContactList(){
+        return converContactList(sessionFactory.fromSession(session -> {
+            return session.createQuery("from ContactRecord", ContactRecord.class).list();
+        }));
     }
 }

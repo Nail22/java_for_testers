@@ -32,18 +32,30 @@ public class ContactCreationTests extends TestBase {
         return result;
     }
 
+    public static List<ContactData> singleRandomContact() {
+        return List.of(new ContactData()
+                .withFistName(CommonFunction.randomString(5))
+                .withLastName(CommonFunction.randomString(10))
+                .withAddress(CommonFunction.randomString(10))
+                .withMiddleName(CommonFunction.randomString(10))
+                .withNickName(CommonFunction.randomString(10))
+                .withPhoto("src/test/resources/images/avatar.jpg"));
+    }
+
     @ParameterizedTest
-    @MethodSource("contactProvider")
+    @MethodSource("singleRandomContact")
     public void canCreateMultipleGroups(ContactData contact) {
-        var oldGroups = app.contact().getList();
+        var oldGroups = app.hbm().getContactList();
+//        var oldGroups = app.contact().getList();
         app.contact().createContact(contact);
-        var newGroups = app.contact().getList();
+        var newGroups = app.hbm().getContactList();
+//        var newGroups = app.contact().getList();
         Comparator<ContactData> compareById = (o1, o2) -> {
             return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
         };
         newGroups.sort(compareById);
         var expectedList = new ArrayList<>(oldGroups);
-        expectedList.add(contact.withId(newGroups.get(newGroups.size() - 1).id()).withMiddleName("").withNickName("").withAddress("").withPhoto("").withPhonesHome("").withEmail(""));
+        expectedList.add(contact.withId(newGroups.get(newGroups.size() - 1).id()).withPhoto(""));
         expectedList.sort(compareById);
         Assertions.assertEquals(newGroups, expectedList);
     }

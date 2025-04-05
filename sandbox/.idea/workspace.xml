@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ContactHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/HibernateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/HibernateHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/hbm/GroupRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/hbm/GroupRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupModificationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupRemovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/GroupRemovalTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactModificationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactRemovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactRemovalTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +99,7 @@
     "Gradle.ContactCreationTests.canCreateMultipleGroups.executor": "Run",
     "Gradle.ContactCreationTests.executor": "Run",
     "Gradle.ContactCreationTests.test.executor": "Run",
-    "Gradle.ContactModificationTests.canModifyContact.executor": "Debug",
+    "Gradle.ContactModificationTests.canModifyContact.executor": "Run",
     "Gradle.ContactRemovalTests.canRemoveALLContact.executor": "Run",
     "Gradle.ContactRemovalTests.canRemoveAllContact.executor": "Run",
     "Gradle.ContactRemovalTests.canRemoveContact.executor": "Run",
@@ -114,13 +115,14 @@
     "Gradle.GroupCreationTests.test.executor": "Run",
     "Gradle.GroupModificationTests.canModifyGroup.executor": "Run",
     "Gradle.GroupModificationTests.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Debug",
-    "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Debug",
+    "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Run",
+    "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Run",
     "Gradle.GroupRemovalTests.executor": "Run",
     "Gradle.GroupRemovalTests.test.executor": "Run",
     "Gradle.SquareTests.canCalculateArea.executor": "Run",
     "Gradle.SquareTests.canCalculatePerimeter.executor": "Run",
     "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
+    "Gradle.Tests in 'ru.stqa.addressbook.tests'.executor": "Run",
     "Gradle.TriangleTests.canCalculateArea.executor": "Run",
     "Gradle.TriangleTests.canCalculatePerimeter.executor": "Run",
     "Gradle.TriangleTests.cannotCreateTriangleWithNegativeSide.executor": "Run",
@@ -158,8 +160,8 @@
       <recent name="C:\devel\homework\java_for_testers\addressbook_web_tests\src\test\resources\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupModificationTests.canModifyGroup">
-    <configuration name="GroupCreationTests.canCreateGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'ru.stqa.addressbook.tests'">
+    <configuration name="ContactCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
@@ -172,7 +174,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.GroupCreationTests.canCreateGroup&quot;" />
+            <option value="&quot;ru.stqa.addressbook.tests.ContactCreationTests.canCreateMultipleGroups&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,7 +185,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactModificationTests.canModifyContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
@@ -196,7 +198,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.GroupModificationTests&quot;" />
+            <option value="&quot;ru.stqa.addressbook.tests.ContactModificationTests.canModifyContact&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,7 +209,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupModificationTests.canModifyGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactRemovalTests.canRemoveAllContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
@@ -220,7 +222,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.GroupModificationTests.canModifyGroup&quot;" />
+            <option value="&quot;ru.stqa.addressbook.tests.ContactRemovalTests.canRemoveAllContact&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -231,7 +233,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupRemovalTests.canRemoveAllGroupsAtOnce" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactRemovalTests.canRemoveContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
@@ -244,7 +246,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.GroupRemovalTests.canRemoveAllGroupsAtOnce&quot;" />
+            <option value="&quot;ru.stqa.addressbook.tests.ContactRemovalTests.canRemoveContact&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -255,7 +257,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupRemovalTests.canRemoveGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'ru.stqa.addressbook.tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
@@ -268,7 +270,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.GroupRemovalTests.canRemoveGroup&quot;" />
+            <option value="&quot;ru.stqa.addressbook.tests.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -280,19 +282,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
-      <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
-      <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
-      <item itemvalue="Gradle.GroupModificationTests" />
-      <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
+      <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
+      <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
+      <item itemvalue="Gradle.ContactRemovalTests.canRemoveAllContact" />
+      <item itemvalue="Gradle.ContactRemovalTests.canRemoveContact" />
+      <item itemvalue="Gradle.Tests in 'ru.stqa.addressbook.tests'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
-        <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
-        <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
-        <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
-        <item itemvalue="Gradle.GroupModificationTests" />
+        <item itemvalue="Gradle.Tests in 'ru.stqa.addressbook.tests'" />
+        <item itemvalue="Gradle.ContactRemovalTests.canRemoveAllContact" />
+        <item itemvalue="Gradle.ContactRemovalTests.canRemoveContact" />
+        <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
+        <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
       </list>
     </recent_temporary>
   </component>
