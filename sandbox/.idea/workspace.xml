@@ -7,9 +7,8 @@
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ContactHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/HibernateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/HibernateHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/hbm/GroupRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/hbm/GroupRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactModificationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactRemovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactRemovalTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,12 +93,14 @@
   "keyToString": {
     "Gradle.CollectionTests.arrayTests.executor": "Run",
     "Gradle.CollectionTests.listTest.executor": "Run",
+    "Gradle.ContactCreationTests.addContactInGroup.executor": "Run",
     "Gradle.ContactCreationTests.canCreateBaseContact.executor": "Run",
+    "Gradle.ContactCreationTests.canCreateContactInGroup.executor": "Debug",
     "Gradle.ContactCreationTests.canCreateFullContact.executor": "Run",
     "Gradle.ContactCreationTests.canCreateMultipleGroups.executor": "Run",
     "Gradle.ContactCreationTests.executor": "Run",
     "Gradle.ContactCreationTests.test.executor": "Run",
-    "Gradle.ContactModificationTests.canModifyContact.executor": "Run",
+    "Gradle.ContactModificationTests.canModifyContact.executor": "Debug",
     "Gradle.ContactRemovalTests.canRemoveALLContact.executor": "Run",
     "Gradle.ContactRemovalTests.canRemoveAllContact.executor": "Run",
     "Gradle.ContactRemovalTests.canRemoveContact.executor": "Run",
@@ -160,8 +161,8 @@
       <recent name="C:\devel\homework\java_for_testers\addressbook_web_tests\src\test\resources\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'ru.stqa.addressbook.tests'">
-    <configuration name="ContactCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ContactCreationTests.addContactInGroup">
+    <configuration name="ContactCreationTests.addContactInGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
@@ -174,7 +175,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.ContactCreationTests.canCreateMultipleGroups&quot;" />
+            <option value="&quot;ru.stqa.addressbook.tests.ContactCreationTests.addContactInGroup&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactCreationTests.canCreateContactInGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.addressbook.tests.ContactCreationTests.canCreateContactInGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -233,30 +258,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ContactRemovalTests.canRemoveContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.tests.ContactRemovalTests.canRemoveContact&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'ru.stqa.addressbook.tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -282,19 +283,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
       <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
+      <item itemvalue="Gradle.ContactCreationTests.addContactInGroup" />
+      <item itemvalue="Gradle.ContactCreationTests.canCreateContactInGroup" />
       <item itemvalue="Gradle.ContactRemovalTests.canRemoveAllContact" />
-      <item itemvalue="Gradle.ContactRemovalTests.canRemoveContact" />
       <item itemvalue="Gradle.Tests in 'ru.stqa.addressbook.tests'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'ru.stqa.addressbook.tests'" />
+        <item itemvalue="Gradle.ContactCreationTests.addContactInGroup" />
         <item itemvalue="Gradle.ContactRemovalTests.canRemoveAllContact" />
-        <item itemvalue="Gradle.ContactRemovalTests.canRemoveContact" />
         <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
-        <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleGroups" />
+        <item itemvalue="Gradle.ContactCreationTests.canCreateContactInGroup" />
+        <item itemvalue="Gradle.Tests in 'ru.stqa.addressbook.tests'" />
       </list>
     </recent_temporary>
   </component>
@@ -310,6 +311,15 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactModificationTests.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="index" />
