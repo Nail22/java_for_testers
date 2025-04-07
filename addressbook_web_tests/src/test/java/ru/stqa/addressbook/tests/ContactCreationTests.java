@@ -86,13 +86,23 @@ public class ContactCreationTests extends TestBase {
         if (app.hbm().getGroupCount() == 0) {
             app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
         }
+        if (app.contact().getCountContact() == 0) {
+            app.contact().createContact(new ContactData()
+                    .withFistName("FirstName")
+                    .withLastName("LastName")
+                    .withMiddleName("MiddleName")
+                    .withPhoto("src/test/resources/images/avatar.jpg")
+                    .withAddress("Address")
+                    .withPhonesHome("phones")
+                    .withEmail("email"));
+        }
         var group = app.hbm().getGroupList().get(0);
         var oldRelated = app.hbm().getContactsInGroup(group);
         var contacts = app.hbm().getContactList();
         var rnd  = new Random();
         var index = rnd.nextInt(contacts.size());
         app.contact().addContactIngroups(contacts.get(index),group);
-        var resultContact = app.contact().getList().get(index);
+        var resultContactRelated = app.hbm().getContactList().get(index);
         var expectedRelated = app.hbm().getContactsInGroup(group);
 
         Comparator<ContactData> compareById = (o1, o2) -> {
@@ -102,13 +112,13 @@ public class ContactCreationTests extends TestBase {
         var actualList = new ArrayList<>(oldRelated);
         boolean isContains = false;
         for (ContactData contactData : actualList) {
-            if (Objects.equals(contactData.id(), resultContact.id())) {
+            if (Objects.equals(contactData.id(), resultContactRelated.id())) {
                 isContains = true;
                 break;
             }
         }
         if (isContains == false) {
-            actualList.add(resultContact);
+            actualList.add(resultContactRelated);
         }
         actualList.sort(compareById);
         Assertions.assertEquals(expectedRelated, actualList);

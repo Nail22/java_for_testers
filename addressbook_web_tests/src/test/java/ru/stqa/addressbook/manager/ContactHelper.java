@@ -144,4 +144,13 @@ public class ContactHelper extends HelperBase {
         click(By.name("add"));
         returnToHomePage();
     }
+
+    public void removalContactInGroup(ContactData contact, GroupData group) {
+        opensHomePage();
+        click(By.name("group"));
+        new Select(manager.driver.findElement(By.name("group"))).selectByValue(group.id());
+        selectContact(contact);
+        click(By.name("remove"));
+        returnToHomePage();
+    }
 }
