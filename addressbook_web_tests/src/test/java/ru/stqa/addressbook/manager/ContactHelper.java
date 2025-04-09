@@ -1,10 +1,13 @@
 package ru.stqa.addressbook.manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.stqa.addressbook.model.ContactData;
 import ru.stqa.addressbook.model.GroupData;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,7 +64,7 @@ public class ContactHelper extends HelperBase {
     }
 
     private void selectContact(ContactData contact) {
-        click(By.cssSelector(String.format("input[value='%s']", contact.id())));
+        click(By.cssSelector(String.format("input[type='checkbox'][value='%s']", contact.id())));
     }
 
     private void opensHomePage() {
