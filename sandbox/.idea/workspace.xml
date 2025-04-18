@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/manager/ContactHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook_web_tests/src/test/java/ru/stqa/addressbook/tests/ContactCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -160,7 +159,7 @@
       <recent name="C:\devel\homework\java_for_testers\addressbook_web_tests\src\test\resources\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTests.addContactInGroup">
+  <component name="RunManager" selected="Gradle.ContactRemovalTests.RemoveContactInGroup">
     <configuration name="ContactCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -290,8 +289,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactCreationTests.addContactInGroup" />
         <item itemvalue="Gradle.ContactRemovalTests.RemoveContactInGroup" />
+        <item itemvalue="Gradle.ContactCreationTests.addContactInGroup" />
         <item itemvalue="Gradle.ContactCreationTests" />
         <item itemvalue="Gradle.ContactRemovalTests.canRemoveContact" />
         <item itemvalue="Gradle.ContactRemovalTests.canRemoveAllContact" />
@@ -313,6 +312,8 @@
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="index" />
+        <watch expression="contactsAdd" />
+        <watch expression="contactsAdd" />
       </configuration>
     </watches-manager>
   </component>
