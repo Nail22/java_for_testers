@@ -28,6 +28,12 @@ public class ContactRecord {
 
     public String phone2;
 
+    public String email;
+
+    public String email2;
+
+    public String email3;
+
     public ContactRecord (){
     }
     public ContactRecord (int id, String firstname, String middlename, String lastname, String nickname, String address){

@@ -78,7 +78,10 @@ public class HibernateHelper extends HelperBase {
                 .withHome(record.home)
                 .withMobile(record.mobile)
                 .withWork(record.work)
-                .withSecondary(record.phone2);
+                .withSecondary(record.phone2)
+                .withEmail(record.email)
+                .withEmailSecond(record.email2)
+                .withEmailThree(record.email3);
     }
 
     private static ContactRecord convert(ContactData data) {
