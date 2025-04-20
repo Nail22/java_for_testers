@@ -156,4 +156,8 @@ public class ContactHelper extends HelperBase {
         click(By.name("remove"));
         returnToHomePage();
     }
+
+    public String getPhones(ContactData contact) {
+        return manager.driver.findElement(By.xpath(String.format("//input[@id='%s']/../../td[6]",contact.id()))).getText();
+    }
 }
