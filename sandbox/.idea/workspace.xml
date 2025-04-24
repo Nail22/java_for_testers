@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../mantis_test/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mantis_test/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mantis_test/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mantis_test/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_test/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,75 +92,75 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.CollectionTests.arrayTests.executor": "Run",
-    "Gradle.CollectionTests.listTest.executor": "Run",
-    "Gradle.CollectionTests.setTest.executor": "Run",
-    "Gradle.CollectionTests.testMap.executor": "Run",
-    "Gradle.ContactCreationTests.addContactInGroup.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateBaseContact.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateContactInGroup.executor": "Debug",
-    "Gradle.ContactCreationTests.canCreateFullContact.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateMultipleGroups.executor": "Run",
-    "Gradle.ContactCreationTests.executor": "Debug",
-    "Gradle.ContactCreationTests.test.executor": "Run",
-    "Gradle.ContactInfoTests.TestAddress.executor": "Debug",
-    "Gradle.ContactInfoTests.TestContentContact.executor": "Debug",
-    "Gradle.ContactInfoTests.TestInfoContact.executor": "Run",
-    "Gradle.ContactInfoTests.testMail.executor": "Debug",
-    "Gradle.ContactInfoTests.testPhones.executor": "Debug",
-    "Gradle.ContactModificationTests.canModifyContact.executor": "Debug",
-    "Gradle.ContactRemovalTests.RemoveContactInGroup.executor": "Run",
-    "Gradle.ContactRemovalTests.canRemoveALLContact.executor": "Run",
-    "Gradle.ContactRemovalTests.canRemoveAllContact.executor": "Run",
-    "Gradle.ContactRemovalTests.canRemoveContact.executor": "Run",
-    "Gradle.ContactRemovalTests.executor": "Run",
-    "Gradle.ContactRemovalTests.test.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroup (1).executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroup.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroupWithNameOnly (1).executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateMultipleGroups.executor": "Run",
-    "Gradle.GroupCreationTests.canNotCreateGroups.executor": "Run",
-    "Gradle.GroupCreationTests.executor": "Run",
-    "Gradle.GroupCreationTests.test.executor": "Run",
-    "Gradle.GroupModificationTests.canModifyGroup.executor": "Run",
-    "Gradle.GroupModificationTests.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Run",
-    "Gradle.GroupRemovalTests.executor": "Run",
-    "Gradle.GroupRemovalTests.test.executor": "Run",
-    "Gradle.LoginTests.canLogin.executor": "Run",
-    "Gradle.ReverseChecks.testSort.executor": "Run",
-    "Gradle.ReverseChecks.testSqrt.executor": "Run",
-    "Gradle.SquareTests.canCalculateArea.executor": "Run",
-    "Gradle.SquareTests.canCalculatePerimeter.executor": "Run",
-    "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
-    "Gradle.Tests in 'ru.stqa.addressbook.tests'.executor": "Run",
-    "Gradle.TriangleTests.canCalculateArea.executor": "Run",
-    "Gradle.TriangleTests.canCalculatePerimeter.executor": "Run",
-    "Gradle.TriangleTests.cannotCreateTriangleWithNegativeSide.executor": "Run",
-    "Gradle.TriangleTests.cannotCreateTriangleWithOneSideIsBigger.executor": "Run",
-    "Gradle.TriangleTests.executor": "Run",
-    "Gradle.TriangleTests.testEqualTriangle.executor": "Run",
-    "Gradle.addressbook_web_tests [:ru.stqa.addressbook.generator.Generator.main()].executor": "Run",
-    "Gradle.sandbox [:Geometry.main()].executor": "Run",
-    "Gradle.sandbox [:Hello.main()].executor": "Run",
-    "Gradle.sandbox [:ru.stqa.geometry.Geometry.main()].executor": "Run",
-    "Gradle.sandbox [build].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/devel/homework/java_for_testers/mantis_test",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.5114943",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.CollectionTests.arrayTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CollectionTests.listTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CollectionTests.setTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CollectionTests.testMap.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.addContactInGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateBaseContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateContactInGroup.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateFullContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateMultipleGroups.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ContactCreationTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactInfoTests.TestAddress.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ContactInfoTests.TestContentContact.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ContactInfoTests.TestInfoContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactInfoTests.testMail.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ContactInfoTests.testPhones.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ContactModificationTests.canModifyContact.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ContactRemovalTests.RemoveContactInGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.canRemoveALLContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.canRemoveAllContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.canRemoveContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroup (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroupWithNameOnly (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateMultipleGroups.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canNotCreateGroups.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupModificationTests.canModifyGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupModificationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.canRemoveGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.canLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReverseChecks.testSort.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReverseChecks.testSqrt.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SquareTests.canCalculateArea.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SquareTests.canCalculatePerimeter.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'addressbook_web_tests.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'ru.stqa.addressbook.tests'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.canCalculateArea.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.canCalculatePerimeter.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.cannotCreateTriangleWithNegativeSide.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.cannotCreateTriangleWithOneSideIsBigger.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTests.testEqualTriangle.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.addressbook_web_tests [:ru.stqa.addressbook.generator.Generator.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sandbox [:Geometry.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sandbox [:Hello.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sandbox [:ru.stqa.geometry.Geometry.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sandbox [build].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/devel/homework/java_for_testers/mantis_test&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5114943&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\devel\homework\java_for_testers\mantis_test" />
