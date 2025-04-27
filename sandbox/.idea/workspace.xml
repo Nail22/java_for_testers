@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../mantis_test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mantis_test/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +94,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build mantis_test.executor": "Run",
     "Gradle.CollectionTests.arrayTests.executor": "Run",
     "Gradle.CollectionTests.listTest.executor": "Run",
     "Gradle.CollectionTests.setTest.executor": "Run",
@@ -131,6 +132,7 @@
     "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Run",
     "Gradle.GroupRemovalTests.executor": "Run",
     "Gradle.GroupRemovalTests.test.executor": "Run",
+    "Gradle.IssueCreationTests.canCreateIssue.executor": "Run",
     "Gradle.JamesTests.canCreateUser.executor": "Run",
     "Gradle.LoginTests.canLogin.executor": "Run",
     "Gradle.MailTests.canDrainInBox.executor": "Run",
@@ -160,7 +162,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/devel/homework/java_for_testers/mantis_test/src/test/java/ru/stqa/mantis",
+    "last_opened_file_path": "C:/devel/homework/java_for_testers/mantis_test/src/test/java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5114943",
@@ -169,6 +171,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\devel\homework\java_for_testers\mantis_test\src\test\java" />
       <recent name="C:\devel\homework\java_for_testers\mantis_test\src\test\java\ru\stqa\mantis" />
       <recent name="C:\devel\homework\java_for_testers\mantis_test" />
       <recent name="C:\devel\homework\java_for_testers\addressbook_web_tests\src\test" />
@@ -186,8 +189,8 @@
       <recent name="ru.stqa.mantis.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserRegistrationTests.canRegisterApiUser">
-    <configuration name="MailTests.canDrainInBox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.IssueCreationTests.canCreateIssue">
+    <configuration name="IssueCreationTests.canCreateIssue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../mantis_test" />
@@ -200,7 +203,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.MailTests.canDrainInBox&quot;" />
+            <option value="&quot;ru.stqa.mantis.tests.IssueCreationTests.canCreateIssue&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -308,19 +311,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
       <item itemvalue="Gradle.UserRegistrationTests.canRegisterApiUser" />
       <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
-      <item itemvalue="Gradle.MailTests.canDrainInBox" />
       <item itemvalue="Gradle.MailTests.canExtractUrl" />
       <item itemvalue="Gradle.MailTests.canReceiveEmail" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
         <item itemvalue="Gradle.UserRegistrationTests.canRegisterApiUser" />
         <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
         <item itemvalue="Gradle.MailTests.canExtractUrl" />
         <item itemvalue="Gradle.MailTests.canReceiveEmail" />
-        <item itemvalue="Gradle.MailTests.canDrainInBox" />
       </list>
     </recent_temporary>
   </component>
