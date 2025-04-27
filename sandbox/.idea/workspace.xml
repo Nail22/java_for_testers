@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a7699f-caa8-4f5e-ab4a-e8c3b510a8cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/manager/MailHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/manager/MailHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/manager/SessionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/manager/SessionHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/tests/MailTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/tests/MailTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_test/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +134,7 @@
     "Gradle.JamesTests.canCreateUser.executor": "Run",
     "Gradle.LoginTests.canLogin.executor": "Run",
     "Gradle.MailTests.canDrainInBox.executor": "Run",
+    "Gradle.MailTests.canExtractUrl.executor": "Run",
     "Gradle.MailTests.canReceiveEmail.executor": "Run",
     "Gradle.ReverseChecks.testSort.executor": "Run",
     "Gradle.ReverseChecks.testSqrt.executor": "Run",
@@ -146,6 +148,7 @@
     "Gradle.TriangleTests.cannotCreateTriangleWithOneSideIsBigger.executor": "Run",
     "Gradle.TriangleTests.executor": "Run",
     "Gradle.TriangleTests.testEqualTriangle.executor": "Run",
+    "Gradle.UserRegistrationTests.canRegisterUser.executor": "Run",
     "Gradle.addressbook_web_tests [:ru.stqa.addressbook.generator.Generator.main()].executor": "Run",
     "Gradle.sandbox [:Geometry.main()].executor": "Run",
     "Gradle.sandbox [:Hello.main()].executor": "Run",
@@ -179,7 +182,7 @@
       <recent name="C:\devel\homework\java_for_testers\addressbook_web_tests\src\test\resources\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MailTests.canExtractUrl">
+  <component name="RunManager" selected="Gradle.UserRegistrationTests.canRegisterUser">
     <configuration name="JamesTests.canCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -194,30 +197,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.stqa.mantis.tests.JamesTests.canCreateUser&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.canLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../mantis_test" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.LoginTests.canLogin&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -300,20 +279,44 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="UserRegistrationTests.canRegisterUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../mantis_test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.UserRegistrationTests.canRegisterUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
       <item itemvalue="Gradle.JamesTests.canCreateUser" />
       <item itemvalue="Gradle.MailTests.canDrainInBox" />
       <item itemvalue="Gradle.MailTests.canExtractUrl" />
       <item itemvalue="Gradle.MailTests.canReceiveEmail" />
-      <item itemvalue="Gradle.LoginTests.canLogin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
         <item itemvalue="Gradle.MailTests.canExtractUrl" />
         <item itemvalue="Gradle.MailTests.canReceiveEmail" />
         <item itemvalue="Gradle.MailTests.canDrainInBox" />
         <item itemvalue="Gradle.JamesTests.canCreateUser" />
-        <item itemvalue="Gradle.LoginTests.canLogin" />
       </list>
     </recent_temporary>
   </component>
