@@ -26,7 +26,7 @@ public class UserRegistrationTests extends TestBase{
         var username = CommonFunction.randomString(8);
         var email = String.format("%s@localhost", username);
         app.jamesApi().addUser(email, "password");
-        app.session().registerUser(username,email);
+        app.mantisApi().registerUser(username,email);
         app.mail().receive(email,"password", Duration.ofSeconds(60));
         app.session().completingRegistrationUser(email,username);
         app.http().login(username,"password");
